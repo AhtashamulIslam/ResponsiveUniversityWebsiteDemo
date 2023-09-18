@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cambridge-Contact</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lora|300,400,700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("UVUZIuls_ntSd3WSR");
+   })();
+</script>
+    
+    <script src="/contact.js"></script>
+</head>
+<body>
+    <header class="headeraboutus">
+       
+        <div class="HeaderMenu">
+        <div><a href="index.html" ><img src="/images/logocambridge.png" class="logo"></a></div>
+         
+        <nav id="navbar">
+            <i class="fa-regular fa-rectangle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            
+        </nav>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+         <div class="headdetailcontact">
+        <h1 class="head_title">Contact Us</h1>
+        </div>
+    </header>
+   <section class="location">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9780.372313853371!2d0.113168!3d52.205356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8774ed42712a9%3A0x21ca80abf36db5bb!2sUniversity%20of%20Cambridge!5e0!3m2!1sen!2sbd!4v1694952258206!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+   <section class="contactsection">
+       <div class="contactdetail">
+           <div class="contactgrid contact-col">
+               <div class="contactblock">
+                 <i class="fa-sharp fa-solid fa-house"></i>
+                 <div>  <span><h4>HOUSE : 566, KAMAL_KHAN ROAD</h4></span>
+                   <p>Ibrahimpur, Dhaka</p></div>
+               </div>
+               <div class="contactblock">
+                   <i class="fa-solid fa-phone"></i>
+                   <div><span><h4>PHONE : +8801302-094751</h4></span>
+                   <p>Saturday to Thursday</p></div>
+               </div>
+               <div class="contactblock">
+                   <i class="fa-solid fa-envelope"></i>
+                <div>
+                       <span><h4>EXAMPLE@gmail.com</h4></span>
+                     <p>Available 24/7</p>
+                   </div>
+               </div>
+           </div>
+           <div class="contact-form contact-col">
+               <form onsubmit="sendEmail();reset();return false;">
+                   <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                   <input type="email" id="email" name="email" placeholder="Your Email address" required>
+                   <input type="text" id="subject"  name="subject" placeholder="Your Subject Here" required>
+                   <textarea rows="8" id="message" placeholder="Your Message"></textarea>
+                   <button type="submit" onclick="sendEmail()" class="btn btnblog">Send message</button>
+               </form>
+           </div>
+       </div>
+   </section>
+  <section class="footeraboutus">
+    
+    <div class="contactUs">
+        <h3>About Us</h3>
+        <p>We are avilable in the follwing media named facebook,twitter,linked-in and the other online platform.<br>So why getting late to contact us?...Do it Now!</p>
+    </div>
+    <div class="mediaicon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook-messenger"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-whatsapp"></i>
+        <p>Stay connected with us <i class="fa-solid fa-heart"></i>by this media</p>
+    </div>
+</section>
+
+<script>
+            var navBar=document.getElementById("navbar");
+            
+            function showMenu(){
+            navBar.style.right="0";
+              }
+              function hideMenu(){
+             navBar.style.right="-200px";
+                 }
+</script>
+
+    
+</body>
+</html>

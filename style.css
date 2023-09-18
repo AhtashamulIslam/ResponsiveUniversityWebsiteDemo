@@ -1,0 +1,491 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0,4,30,.7),rgba(5,7,80,.7)),url(images/cambridge.jpeg);
+    background-position:center;
+    background-size:cover;
+    position: relative;
+  
+}
+.logo{
+    
+    width: 150px;
+    opacity: .8;
+    aspect-ratio:1/.5;
+}
+.HeaderMenu{
+  display: flex;
+  justify-content:space-between;
+  align-content: center;
+  
+}
+
+nav ul{
+
+    display:flex;
+    list-style-type: none;
+    margin-top:1.75rem;
+    gap:1rem;
+    padding:0 2rem;
+}
+nav ul li a{
+    
+    text-decoration: none;
+    font-size: .875rem;
+    display: inline-block;
+    padding-bottom: .5rem;
+     color:white;
+    
+}
+nav ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: brown;
+    display:block;
+    margin:auto;
+    transition: .5s;
+}
+nav ul li:hover::after{
+    width:100%;
+   
+}
+
+.headdetail{
+    text-align: center;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    
+    
+}
+.headdetailabout,.headdetailblog,.headdetailcontact,.headdetailcourse{
+     text-align: center;
+    top:30%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.headdescription{
+    padding:.5rem 0;
+}
+.head_title,.headdescription{
+    text-align:center;
+    color:white;
+    opacity: .8;
+}
+.btn{
+    display: inline-block;
+    padding: .75rem 1rem;
+    text-decoration: none;
+    border:1px solid white;
+    color:white;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    border: 1px solid firebrick;
+    background:firebrick;
+    transition:.5s; 
+}
+ .HeaderMenu i{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+@media (max-width:700px){
+     h1{
+         font-size: 1rem;
+     }
+    .head_title{
+        line-height: 1.5;
+    }
+  nav ul{
+        display:block;
+        margin:1rem;
+        padding:1rem;
+        
+    }
+    nav ul li{
+        width:max-content;
+    }
+ nav{
+        height:100vh;
+        width:200px;
+        position:fixed;
+        top:0;
+        right:0;
+        background:gray;
+        z-index: 2; 
+        transition: 1s;
+    }
+ 
+  .HeaderMenu  i{
+        display: block;
+        margin:1rem;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+}
+.headeraboutus{
+    height: 100vh;
+    width:100%;
+}
+.course_detail,.campus,.facilitiesdetail,.testimonialdetail,.footer{
+    width:100%;
+}
+.col{
+    grid-column:1/3;
+    margin:0 auto;
+}
+.CampusImageBlock,.colabout,.bloggen,
+.contact-col,.facilitiesblock,
+.testimonialblock
+{
+    grid-column:1/3;
+}
+ 
+ 
+ .contactblock div{
+    padding:.5rem;
+}
+ .footer{
+   
+     margin:6rem auto;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+     gap:2rem;
+     justify-content: space-around;
+     text-align: center;
+     
+}
+}
+
+.course{
+    padding-top:2rem;
+}
+.course_about{
+    text-align: center;
+    padding: .75rem 0;
+}
+
+.course_detail,.campus,.facilitiesdetail,.testimonialdetail{
+    width:80%;
+    margin:1.5rem auto; 
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));
+    gap:1.75rem;
+    padding: 2.5rem;
+    justify-content: space-between;
+    
+}
+.col h2{
+    text-align: center;
+    
+}
+.col{
+background: cornsilk;
+padding:1rem;
+}
+.col:hover{
+    box-shadow: 2px 4px 12px grey;
+    transition:.5s;
+}
+h1,h2,p{
+    text-align: center;
+    opacity: .8;
+}
+ p{
+     font-size:1.125rem;
+    color: gray;
+}
+ h2{
+    padding: 1rem 0;
+}
+ h1{
+    font-size: 2.5rem;
+    padding:.5rem 0; 
+}
+.campusdetail p{
+    text-align: center;
+    font-size: 1.12rem;
+    color: gray;
+
+}
+
+
+.CampusImageBlock{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+img{
+    width:100%;
+    aspect-ratio:1/1.3;
+    display: block;
+}
+.aboutusimage,.blogimage{
+    aspect-ratio:.75/.5;
+}
+.coverImage{
+    background: transparent;
+    height:80%;
+    width:80%;
+    top:0;
+    left:0;
+    position: absolute;
+    transition: .5s;
+    
+}
+.coverImage:hover{
+    background: rgba(226,0,0,0.5);
+    top:10%;
+    left:10%;
+}
+.coverImage h3{
+    width:100%;
+    position: absolute;
+    bottom:0;
+    left:80%;
+    transform: translateX(-30%);
+    opacity: 0;
+    font-size:1.5rem;
+    color: #fff;
+}
+.coverImage:hover h3{
+    bottom:47%;
+    transform: translateX(-80%);
+    opacity: 1;
+    transition: .7s;
+}
+.col,.CampusImageBlock,.testimonialblock{
+    border-radius:1rem; 
+}
+.facilitiesblock img{
+    border-radius: 1rem;
+    aspect-ratio:1/1;
+}
+.facilitiesblock p,h2{
+    text-align: left;
+}
+.testimonialblock{
+    display: flex;
+    justify-content: space-between;
+    background: cornsilk;
+    padding:1rem;
+    text-align: left;
+   
+   
+}
+.testimonialblock:hover{
+    box-shadow: .2rem .5rem 1rem gray;
+    transition:.5s;
+}
+.testimonialblock img{
+    height:2rem;
+    width:2.5rem;
+    border:2px solid white;
+    border-radius: 50%;
+
+}
+.testimonialbody{
+    margin:0 .75rem ;
+}
+.testimonialbody i{
+    color: firebrick;
+    opacity: .6;
+}
+.testimonialbody h3,.aboutusbody h1,.blogleft h2{
+     text-align:left;
+     padding: .5rem 0;
+    
+}
+.testimonialbody p,.aboutusbody p,.blogleft p{
+     margin:0;
+     text-align:left;
+     
+}
+.col-3,.col-4,.col-5{
+    grid-column:span 2;
+}
+.footer{
+    width:80%;
+     margin:6rem auto;
+     display: flex;
+     flex-direction: column;
+     gap:2rem;
+     justify-content: space-around;
+     text-align: center;
+     flex-wrap:wrap;
+     flex:1;
+}
+.cta{
+   
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0.7)),url(/images/footerimage.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:100px;
+    color:white;
+    text-align: center;
+    border-radius: 1rem;
+}
+.footeraboutus{
+    width:100%;
+     margin:4rem auto;
+     display: flex;
+     flex-direction: column;
+     gap:2rem;
+     justify-content: space-around;
+     text-align: center;
+     flex-wrap:wrap;
+     flex:1;
+}
+.mediaicon i{
+    color: crimson;
+    margin: .5rem;
+   
+}
+.contactUs h3{
+    
+    padding-bottom: 1rem;
+}
+.headeraboutus{
+    height:50vh;
+    width:100%;
+    background: linear-gradient(rgba(0,4,30,.7),rgba(5,7,80,.7)),url(/images/aboutus.webp);
+    background-position: center;
+    background-size: cover;
+}
+.aboutusdetail,.blogdetail{
+    width:80%;
+    margin:3rem auto; 
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(40%,1fr));
+    gap:1.75rem;
+    padding: 2.5rem;
+    justify-content: space-between;
+}
+.btnaboutus{
+     
+    margin:1rem 0;
+    border:1px solid black;
+    color:black;
+   
+}
+.blogleft h2{
+    padding: 1.5rem 0;
+}
+.blogright{
+    margin: 0;
+    
+}
+.blogright h2{
+    background: chocolate;
+    padding: .5rem;
+    text-align: center;
+}
+.post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: .85rem;
+   
+}
+.comment{
+    margin:3rem 0;
+    padding:1rem;
+    border:1px solid black;
+
+}
+.comment h2{
+    text-align: left;
+    margin:0 ;
+    padding-bottom:0.25rem;
+}
+.comment-form input,.comment-form textarea{
+    width:100%;
+    padding:.5rem;
+    margin:.75rem 0;
+    background: #f0f0f0;
+    border:none;
+    box-sizing: border-box;
+}
+.location{
+    width:80%;
+    padding: 100px 0 60px;
+    margin:auto;
+}
+.location iframe{
+    width:100%;
+}
+.contactsection{
+    width:80%;
+    margin:0 auto;
+    
+}
+.contactdetail{
+     width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    margin:0;
+    gap:1.75rem;
+    justify-content: space-between;
+}
+.contactgrid{
+    margin:0;
+}
+.contactblock{
+    display: flex;
+    flex:1;
+    margin: 0;
+    padding:1rem 0;
+    
+}
+.contactblock i{
+    font-size: 1.75rem;
+    color: chocolate;
+    padding:.5rem;
+}
+.contactblock p{
+    text-align: left;
+}
+.contactblock div{
+    padding-left:1rem;
+}
+.contactblock h4{
+    padding-bottom:.5rem ;
+}
+.contact-form input,.contact-form textarea{
+    width:100%;
+    padding:.5rem;
+    margin:.75rem 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

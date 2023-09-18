@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cambridge-Home-page</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lora|300,400,700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body>
+    <header class="headeraboutus">
+       
+        <div class="HeaderMenu">
+        <div><a href="index.html" ><img src="/images/logocambridge.png" class="logo"></a></div>
+         
+        <nav id="navbar">
+            <i class="fa-regular fa-rectangle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            
+        </nav>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+         <div class="headdetailabout">
+        <h1 class="head_title">About Us</h1>
+        </div>
+    </header>
+    <section class="aboutus">
+        <div class="aboutusdetail">
+            <div class="aboutusbody colabout">
+                <h1>World's Most Popular UniversitY</h1>
+                <p>Hello, and a warm welcome to BCG at University of Cambridge, which contains information on how BCG connects with Cambridge students.Hello, and a warm welcome to BCG at University of Cambridge, which contains information on how BCG connects with Cambridge students.Hello, and a warm welcome to BCG at University of Cambridge, which contains information on how BCG connects with Cambridge students.</p>
+                <a href="#" class="btn btnaboutus">EXPLORE NOW</a>
+            </div>
+            <div class="colabout">
+                <img src="/images/aboutusimage.webp" class="aboutusimage">
+            </div>
+        </div>
+    </section>
+   
+<section class="footeraboutus">
+    
+    <div class="contactUs">
+        <h3>About Us</h3>
+        <p>We are avilable in the follwing media named facebook,twitter,linked-in and the other online platform.<br>So why getting late to contact us?...Do it Now!</p>
+    </div>
+    <div class="mediaicon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook-messenger"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-whatsapp"></i>
+        <p>Stay connected with us <i class="fa-solid fa-heart"></i>by this media</p>
+    </div>
+</section>
+
+<script>
+            var navBar=document.getElementById("navbar");
+            
+            function showMenu(){
+            navBar.style.right="0";
+              }
+              function hideMenu(){
+             navBar.style.right="-200px";
+                 }
+</script>
+
+    
+</body>
+</html>
